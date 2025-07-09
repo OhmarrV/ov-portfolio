@@ -1,0 +1,49 @@
+#nav-container{
+    display: flex;
+    background-color: red;
+}
+.nav-button{
+    width: 100px;
+    height: 40px;
+    background: none;
+    background-color: grey;
+    border: none;
+
+    padding: 10px;
+}
+#nav-list{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+}
+#nav-container li{
+    display: flex;
+    margin-right: 20px;
+}
+
+
+#project-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-box{
+    display: flex;
+    margin: 50px;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+.project-box img{
+    min-width: 600px;
+    max-width: 800px;
+
+    min-height: 400px;
+    max-height: 600px;
+
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out ;
+}
+.project-box img:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
