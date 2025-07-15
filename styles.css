@@ -1,14 +1,17 @@
 body{
   margin: 0;
   background-color: #D6C0B3;
+  font-family: 'Roboto', sans-serif;
 }
-
 header{
   margin: 0;
 }
 main{
     margin: 1rem;
     background-color: white;
+}
+hr{
+    margin: 1rem;
 }
 
 /* Nav Section */
@@ -18,11 +21,13 @@ main{
     justify-content: space-between;
     min-width: 800px;
     max-width: 100%;
+
 }
 
 #nav-container h1{
     background-color: #D6C0B3;
     margin-left: 20px;    
+    font-size: 2rem
 }
 .nav-button{
     width: 100px;
@@ -46,6 +51,9 @@ main{
 
 
 /* About Section */
+#about-me-section{
+    margin-left: 40px;
+}
 #about-me-container{
     display: flex;
     align-items: flex-start;
@@ -91,6 +99,9 @@ main{
 
 
 /* Project Section */
+#projects-section{
+    margin-left: 40px;
+}
 #project-container{
     display: flex;
     flex-wrap: wrap;
@@ -111,4 +122,15 @@ main{
 
     border-radius: 10px;
     transition: transform 0.2s ease-in-out ;
+    cursor: pointer;
+}
+.project-box img:hover{
+    transform: scale(1.01);
+}
+
+
+
+/* Resume Section */
+#resume-section{
+    margin-left: 40px;
 }
