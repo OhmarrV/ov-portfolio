@@ -17,16 +17,24 @@
         <nav>
             <ul id="nav-list">
                 <li>
-                    <button class="nav-button">About</button>
+                    <a href="#">
+                        <button class="nav-button">About</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Projects</button>
+                    <a href="#projects-section">
+                        <button class="nav-button">Projects</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Resume</button>
+                    <a href="#resume-section">
+                        <button class="nav-button">Resume</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Contact Me</button>
+                    <a href="#contact-me-section">
+                        <button class="nav-button">Contact Me</button>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -34,9 +42,8 @@
     </header>
     
     
-    
     <main>
-        <hr>
+        
         <section id="about-me-section">
             <h2>About me</h2>
             <div id="about-me-container">
@@ -60,12 +67,12 @@
                     </p>
                 </div>
                 <div id="img-wrapper">
-                    <img id="about-me-img" src="images/me.png" alt="Picture of me">
+                    <img id="about-me-img" src="images/me.pngX" alt="Picture of me">
                 </div>
             </div>
         </section>
-        <hr>
-        <section id="projects-section">
+        <hr class="hr-marg" id="projects-hr">
+        <section class="scroll-offset" id="projects-section">
             <h2>Projects</h2>
             <div id="project-container">
                 <article class="project-box">
@@ -101,16 +108,16 @@
                 </article>
             </div>
         </section>
-        <hr>
-        <section id="resume-section">
-            <h2>Resume</h2>
-            <a href="">OV Resume</a>
+        <hr class="hr-marg" id="resume-hr">
+        <section id="resume-section" class="sm-scroll-offset">
+            <div id="resume-pdf">
+                <h2>Resume</h2>
+                <embed src="2025 Resume OV.pdf" />
+            </div>
         </section>            
     </main>
-    
-    <hr>
 
-    <footer>
+    <footer id="contact-me-section">
         <ul>
             <li><a href="">Email</a></li>
             <li><a href="">Github</a></li>

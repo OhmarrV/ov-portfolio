@@ -4,16 +4,31 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 header{
-  margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
 }
 main{
     margin: 1rem;
     background-color: white;
 }
-hr{
-    margin: 1rem;
+html{
+    scroll-behavior: smooth;
 }
 
+.hr-marg{
+    margin: 1rem;
+    opacity: 30%;
+}
+.scroll-offset{
+    scroll-margin-top: 120px;
+}
+.sm-scroll-offset{
+    scroll-margin-top: 80px;
+}
 /* Nav Section */
 #nav-container{
     display: flex;
@@ -21,7 +36,6 @@ hr{
     justify-content: space-between;
     min-width: 800px;
     max-width: 100%;
-
 }
 
 #nav-container h1{
@@ -50,9 +64,15 @@ hr{
 }
 
 
+h2{
+    font-size: 4rem;
+}
+
 /* About Section */
 #about-me-section{
     margin-left: 40px;
+    padding-top: 1rem;
+    overflow: hidden;
 }
 #about-me-container{
     display: flex;
@@ -133,4 +153,73 @@ hr{
 /* Resume Section */
 #resume-section{
     margin-left: 40px;
+    margin-right: 40px;
+    padding: 2rem;
+}
+#resume-pdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    
+}
+embed{
+    display: flex;
+    flex: 1 1 1;
+
+    min-width: 200px;
+    min-height: 400px;
+    height: 1100px;
+    width: 800px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Project Template */
+.project-main{
+ min-width: 770px;   
+}
+#project-template-section{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+#project-1-section{
+    
+}
+
+.main-project-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 50px;
+    
+    flex-direction: column;
+    background-color: green;
+}
+.main-project-box img{
+    
+
+    border-radius: 10px;
+}
+.project-template-description{
+    margin-top: 1rem;
+    background-color: red;
 }
