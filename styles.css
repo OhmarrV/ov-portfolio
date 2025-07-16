@@ -67,11 +67,14 @@ html{
 h2{
     font-size: 4rem;
 }
+h3{
+    font-size: 2rem;
+}
 
 /* About Section */
 #about-me-section{
     margin-left: 40px;
-    padding-top: 1rem;
+    padding-top: 40px;
     overflow: hidden;
 }
 #about-me-container{
@@ -120,7 +123,8 @@ h2{
 
 /* Project Section */
 #projects-section{
-    margin-left: 40px;
+    margin: 0px 40px 0px 40px;
+    overflow: hidden;
 }
 #project-container{
     display: flex;
@@ -129,15 +133,18 @@ h2{
 
 .project-box{
     display: flex;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
     flex: 1 1 0;
     flex-direction: column;
 }
 .project-box img{
+    aspect-ratio: 3 / 2;
     min-width: 600px;
+    width: 100%;
     max-width: 800px;
 
     min-height: 400px;
+    height: auto;
     max-height: 600px;
 
     border-radius: 10px;
@@ -147,6 +154,7 @@ h2{
 .project-box img:hover{
     transform: scale(1.01);
 }
+
 
 
 
