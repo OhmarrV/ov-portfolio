@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: #D6C0B3;
+  background-color: #f8f8f8;
   font-family: 'Roboto', sans-serif;
 }
 header{
@@ -23,44 +23,59 @@ html{
     margin: 1rem;
     opacity: 30%;
 }
-.scroll-offset{
-    scroll-margin-top: 120px;
+.pro-scroll-offset{
+    scroll-margin-top: 3rem;
 }
 .sm-scroll-offset{
     scroll-margin-top: 80px;
 }
+
+
 /* Nav Section */
 #nav-container{
     display: flex;
-    background-color: #493628;
-    justify-content: space-between;
-    min-width: 800px;
+    justify-content: center;
+    
     max-width: 100%;
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 33, 61, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
-
+#nav-container nav{
+    width: 100%;
+    margin-right: 5rem;
+}
+/*
 #nav-container h1{
     background-color: #D6C0B3;
     margin-left: 20px;    
     font-size: 2rem
-}
+} */
 .nav-button{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
     width: 100px;
     height: 40px;
     background: none;
-    background-color: #AB886D;
+    /*background-color: #AB886D;*/
     border: none;
-
-    cursor: pointer;
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+}
+.nav-button:hover{
+    transform: scale(1.05);
+    
 }
 #nav-list{
+    width: 100%;
     display: flex;
     list-style: none;
     list-style-type: none;
-    margin-right: 20px;
-    background-color: #D6C0B3;
+    justify-content: space-evenly;
+    
 }
 #nav-container li{
-    display: flex;
+    
 }
 
 
