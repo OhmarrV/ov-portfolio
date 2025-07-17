@@ -10,6 +10,8 @@ header{
     z-index: 1000;
     width: 100%;
     margin: 0;
+
+    border-bottom: 3px solid rgba(0, 44, 83, 0.2);
 }
 main{
     margin: 1rem;
@@ -37,6 +39,8 @@ html{
     justify-content: center;
     
     max-width: 100%;
+    height: 5rem;
+
     background: #000000;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 33, 61, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
@@ -44,12 +48,6 @@ html{
     width: 100%;
     margin-right: 5rem;
 }
-/*
-#nav-container h1{
-    background-color: #D6C0B3;
-    margin-left: 20px;    
-    font-size: 2rem
-} */
 .nav-button{
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -57,7 +55,6 @@ html{
     width: 100px;
     height: 40px;
     background: none;
-    /*background-color: #AB886D;*/
     border: none;
     cursor: pointer; 
     transition: transform 0.2s ease-in-out;
@@ -74,13 +71,12 @@ html{
     justify-content: space-evenly;
     
 }
-#nav-container li{
-    
-}
+
 
 
 h2{
     font-size: 4rem;
+    margin-top: 1rem;
 }
 h3{
     font-size: 2rem;
@@ -91,6 +87,7 @@ h3{
     margin-left: 40px;
     padding-top: 40px;
     overflow: hidden;
+    margin-top: 100px;
 }
 #about-me-container{
     display: flex;
@@ -246,3 +243,39 @@ embed{
     margin-top: 1rem;
     background-color: red;
 }
+
+
+
+/* Footer section */
+#footer-container{
+    display: flex;
+    height: 5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px; 
+}
+.logo-box img{
+    height: 50px;
+    width: 50px;
+    transition: transform 0.2s ease-in-out ;
+    cursor: pointer;
+}
+.logo-box img:hover{
+    transform: scale(1.05);
+}
+#linkd-img{
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in-out ;
+    cursor: pointer;
+}
+#linkd-img:hover{
+    transform: scale(1.2);
+}
+
