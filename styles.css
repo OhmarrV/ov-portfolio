@@ -45,8 +45,10 @@ html{
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 33, 61, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
 #nav-container nav{
+    display: flex;
+    justify-content: center;
+
     width: 100%;
-    margin-right: 5rem;
 }
 .nav-button{
     font-family: 'Roboto', sans-serif;
@@ -64,8 +66,13 @@ html{
     
 }
 #nav-list{
-    width: 100%;
     display: flex;
+    align-items: center;
+        
+
+    width: 100%;
+    
+    padding: 0;
     list-style: none;
     list-style-type: none;
     justify-content: space-evenly;
@@ -77,6 +84,7 @@ html{
 h2{
     font-size: 4rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 h3{
     font-size: 2rem;
@@ -84,15 +92,13 @@ h3{
 
 /* About Section */
 #about-me-section{
-    margin-left: 40px;
-    padding-top: 40px;
+    margin: 100px 40px 0px 40px;
+    padding-top: 2rem;
     overflow: hidden;
-    margin-top: 100px;
 }
 #about-me-container{
     display: flex;
     align-items: flex-start;
-    
     gap: 50px;
 }
 #about-me-p{
@@ -100,7 +106,7 @@ h3{
     max-width: 800px;
     min-width: 300px;
     
-    max-height: 720px;
+    height: 100%;
     flex: 1 1 400px;
 
     font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -136,6 +142,7 @@ h3{
 /* Project Section */
 #projects-section{
     margin: 0px 40px 0px 40px;
+    padding-top: 2rem;
     overflow: hidden;
 }
 #project-container{
@@ -172,9 +179,8 @@ h3{
 
 /* Resume Section */
 #resume-section{
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 2rem;
+    margin: 0px 40px 0px 40px;
+    padding-top: 2rem;
 }
 #resume-pdf{
     display: flex;
@@ -194,16 +200,6 @@ embed{
     height: 1100px;
     width: 800px; 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -279,3 +275,69 @@ embed{
     transform: scale(1.2);
 }
 
+
+
+@media (max-width: 430px){
+    main{
+        background-color: red;
+    }
+    
+    #nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        padding: 0;
+
+        list-style: none;
+        list-style-type: none;
+    }
+    .h2-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    /* About me section */
+    #about-me-container{
+        display: flex;
+        justify-content: center;
+               
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    #img-wrapper{
+        margin: auto;
+        min-width: 250px;
+        min-height: 250px;
+        
+        aspect-ratio: 1 / 1;
+        
+
+        clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
+        background-color: blue;
+    }
+    #about-me-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        background-color: #E4E0E1;
+    }
+
+    /* Resume Section */
+    embed{
+        display: flex;
+        flex: 1 1 1;
+        padding-bottom: 2rem;
+
+        height: 52vh;
+        width: 100%;
+        max-width: 100%; 
+        
+    }
+}
