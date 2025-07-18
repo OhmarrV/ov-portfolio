@@ -92,7 +92,7 @@ h3{
 
 /* About Section */
 #about-me-section{
-    margin: 100px 40px 0px 40px;
+    margin: 80px 40px 0px 40px;
     padding-top: 2rem;
     overflow: hidden;
 }
@@ -180,7 +180,7 @@ h3{
 /* Resume Section */
 #resume-section{
     margin: 0px 40px 0px 40px;
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 0;
 }
 #resume-pdf{
     display: flex;
@@ -277,9 +277,9 @@ embed{
 
 
 
-@media (max-width: 430px){
+@media (max-width: 700px){
     main{
-        background-color: red;
+        min-width: 400px;
     }
     
     #nav-list{
@@ -301,12 +301,20 @@ embed{
     
     
     /* About me section */
+    #about-me-section{
+        margin: 100px 40px 0px 40px;
+        padding-top: 2rem;
+        overflow: hidden;
+    }
     #about-me-container{
         display: flex;
         justify-content: center;
-               
         flex-direction: column-reverse;
         gap: 1rem;
+
+        height: 900px;
+
+        margin-bottom: 1rem;
     }
     #img-wrapper{
         margin: auto;
@@ -318,7 +326,6 @@ embed{
 
         clip-path: circle(50% at 50% 50%);
         overflow: hidden;
-        background-color: blue;
     }
     #about-me-img{
         width: 100%;
@@ -327,6 +334,34 @@ embed{
         object-position: top;
         display: block;
         background-color: #E4E0E1;
+    }
+
+    /* Projects section */
+    #project-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    .project-box img{
+        
+        max-width: 300px;
+        max-height: 200px;
+
+        min-width: auto;
+        min-height: auto;
+
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out ;
+        cursor: pointer;
     }
 
     /* Resume Section */
