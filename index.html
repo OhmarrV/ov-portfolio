@@ -13,20 +13,27 @@
 <body>
     <header>
     <div id="nav-container">
-        <h1>Omar Velazquez</h1>
         <nav>
             <ul id="nav-list">
                 <li>
-                    <button class="nav-button">About</button>
+                    <a href="#">
+                        <button class="nav-button">About</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Projects</button>
+                    <a href="#test-scroll">
+                        <button class="nav-button">Projects</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Resume</button>
+                    <a href="#resume-section">
+                        <button class="nav-button">Resume</button>
+                    </a>
                 </li>
                 <li>
-                    <button class="nav-button">Contact Me</button>
+                    <a href="#contact-me-section">
+                        <button class="nav-button">Contact Me</button>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -34,11 +41,12 @@
     </header>
     
     
-    
     <main>
-        <hr>
+        
         <section id="about-me-section">
-            <h2>About me</h2>
+            <div class="h2-container">
+                <h2>About me</h2>
+            </div>
             <div id="about-me-container">
                 <div id="about-me-p">
                     <p class = "p-indent">
@@ -64,22 +72,25 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <div class="pro-scroll-offset" id="test-scroll"></div>
+        <hr class="hr-marg" id="projects-hr">
         <section id="projects-section">
-            <h2>Projects</h2>
+            <div class="h2-container">
+                <h2>Projects</h2>
+            </div>
             <div id="project-container">
                 <article class="project-box">
                     <h3>Project 1</h3>
-                    <a href="/project-template.html">
-                        <img src="https://placehold.co/600x400" alt="">
+                    <a>
+                        <img src="images/velocify disp.png" alt="" class="test-img">
                     </a>
                     <p>Description of the project</p>
                 </article>
 
                 <article class="project-box">
                     <h3>Project 2</h3>
-                    <a href="/project-template.html">
-                        <img src="https://placehold.co/600x400" alt="">
+                    <a>
+                        <img src="images/Ticket Typer.PNG" alt="" class="test-img">
                     </a>
                     <p>Description of the project</p>
                 </article>
@@ -94,28 +105,45 @@
 
                 <article class="project-box">
                     <h3>Project 4</h3>
-                    <a href="/project-template.html">
-                        <img src="https://placehold.co/600x400" alt="">
+                    <a>
+                        <img src="images/portfolio disp.PNG" alt="">
                     </a>
                     <p>Description of the project</p>
                 </article>
             </div>
         </section>
-        <hr>
-        <section id="resume-section">
-            <h2>Resume</h2>
-            <a href="">OV Resume</a>
+        
+        <hr class="hr-marg" id="resume-hr">
+
+        <section id="resume-section" class="sm-scroll-offset">
+            <div id="resume-pdf">
+                <div class="h2-container">
+                    <h2>Resume</h2>
+                </div>
+                <embed src="2025 Resume OV.pdf" />
+            </div>
         </section>            
     </main>
-    
-    <hr>
 
-    <footer>
-        <ul>
-            <li><a href="">Email</a></li>
-            <li><a href="">Github</a></li>
-            <li><a href="">LinkedIn</a></li>
-        </ul>
+    <footer id="contact-me-section">
+        
+        <div id="footer-container">
+            <div class="logo-box">
+                <a href="">
+                    <img src="png logos/email logo.png">
+                </a>
+            </div>
+            <div class="logo-box">
+                <a href="">
+                    <img src="png logos/github logo.png">
+                </a>
+            </div>
+            <div class="logo-box">
+                <a href="">
+                    <img id="linkd-img" src="png logos/linkedin logo.png">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

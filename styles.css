@@ -1,63 +1,104 @@
 body{
   margin: 0;
-  background-color: #D6C0B3;
+  background-color: #f8f8f8;
   font-family: 'Roboto', sans-serif;
 }
 header{
-  margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+
+    border-bottom: 3px solid rgba(0, 44, 83, 0.2);
 }
 main{
     margin: 1rem;
     background-color: white;
 }
-hr{
-    margin: 1rem;
+html{
+    scroll-behavior: smooth;
 }
+
+.hr-marg{
+    margin: 1rem;
+    opacity: 30%;
+}
+.pro-scroll-offset{
+    scroll-margin-top: 3rem;
+}
+.sm-scroll-offset{
+    scroll-margin-top: 80px;
+}
+
 
 /* Nav Section */
 #nav-container{
     display: flex;
-    background-color: #493628;
-    justify-content: space-between;
-    min-width: 800px;
+    justify-content: center;
+    
     max-width: 100%;
+    height: 5rem;
 
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 33, 61, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
+#nav-container nav{
+    display: flex;
+    justify-content: center;
 
-#nav-container h1{
-    background-color: #D6C0B3;
-    margin-left: 20px;    
-    font-size: 2rem
+    width: 100%;
 }
 .nav-button{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1rem;
     width: 100px;
     height: 40px;
     background: none;
-    background-color: #AB886D;
     border: none;
-
-    cursor: pointer;
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out;
+}
+.nav-button:hover{
+    transform: scale(1.05);
+    
 }
 #nav-list{
     display: flex;
+    align-items: center;
+        
+
+    width: 100%;
+    
+    padding: 0;
     list-style: none;
     list-style-type: none;
-    margin-right: 20px;
-    background-color: #D6C0B3;
-}
-#nav-container li{
-    display: flex;
+    justify-content: space-evenly;
+    
 }
 
+
+
+h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 2rem;
+}
 
 /* About Section */
 #about-me-section{
-    margin-left: 40px;
+    margin: 80px 40px 0px 40px;
+    padding-top: 2rem;
+    overflow: hidden;
 }
 #about-me-container{
     display: flex;
     align-items: flex-start;
-    
     gap: 50px;
 }
 #about-me-p{
@@ -65,7 +106,7 @@ hr{
     max-width: 800px;
     min-width: 300px;
     
-    max-height: 720px;
+    height: 100%;
     flex: 1 1 400px;
 
     font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -100,7 +141,9 @@ hr{
 
 /* Project Section */
 #projects-section{
-    margin-left: 40px;
+    margin: 0px 40px 0px 40px;
+    padding-top: 2rem;
+    overflow: hidden;
 }
 #project-container{
     display: flex;
@@ -109,15 +152,18 @@ hr{
 
 .project-box{
     display: flex;
-    margin: 50px;
+    margin: 0px 50px 50px 50px;
     flex: 1 1 0;
     flex-direction: column;
 }
 .project-box img{
+    aspect-ratio: 3 / 2;
     min-width: 600px;
+    width: 100%;
     max-width: 800px;
 
     min-height: 400px;
+    height: auto;
     max-height: 600px;
 
     border-radius: 10px;
@@ -130,7 +176,203 @@ hr{
 
 
 
+
 /* Resume Section */
 #resume-section{
-    margin-left: 40px;
+    margin: 0px 40px 0px 40px;
+    padding: 2rem 0 2rem 0;
+}
+#resume-pdf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    
+}
+embed{
+    display: flex;
+    flex: 1 1 1;
+
+    min-width: 200px;
+    min-height: 400px;
+    height: 1100px;
+    width: 800px; 
+}
+
+
+
+
+
+/* Project Template */
+.project-main{
+ min-width: 770px;   
+}
+#project-template-section{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+#project-1-section{
+    
+}
+
+.main-project-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 50px;
+    
+    flex-direction: column;
+    background-color: green;
+}
+.main-project-box img{
+    
+
+    border-radius: 10px;
+}
+.project-template-description{
+    margin-top: 1rem;
+    background-color: red;
+}
+
+
+
+/* Footer section */
+#footer-container{
+    display: flex;
+    height: 5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px; 
+}
+.logo-box img{
+    height: 50px;
+    width: 50px;
+    transition: transform 0.2s ease-in-out ;
+    cursor: pointer;
+}
+.logo-box img:hover{
+    transform: scale(1.05);
+}
+#linkd-img{
+    transform: scale(1.15);
+    transition: transform 0.2s ease-in-out ;
+    cursor: pointer;
+}
+#linkd-img:hover{
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width: 700px){
+    main{
+        min-width: 400px;
+    }
+    
+    #nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        padding: 0;
+
+        list-style: none;
+        list-style-type: none;
+    }
+    .h2-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    /* About me section */
+    #about-me-section{
+        margin: 100px 40px 0px 40px;
+        padding-top: 2rem;
+        overflow: hidden;
+    }
+    #about-me-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+        height: 900px;
+
+        margin-bottom: 1rem;
+    }
+    #img-wrapper{
+        margin: auto;
+        min-width: 250px;
+        min-height: 250px;
+        
+        aspect-ratio: 1 / 1;
+        
+
+        clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
+    }
+    #about-me-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        background-color: #E4E0E1;
+    }
+
+    /* Projects section */
+    #project-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .project-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    .project-box img{
+        
+        max-width: 300px;
+        max-height: 200px;
+
+        min-width: auto;
+        min-height: auto;
+
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out ;
+        cursor: pointer;
+    }
+
+    /* Resume Section */
+    embed{
+        display: flex;
+        flex: 1 1 1;
+        padding-bottom: 2rem;
+
+        height: 52vh;
+        width: 100%;
+        max-width: 100%; 
+        
+    }
 }
